@@ -31,7 +31,7 @@ form.onsubmit = function (event) {
     modal.Message.innerText = message
     modal.open()
 
-    if (weight == '') {
+    if (weight == '' || height == '') {
         alertError.classList.add('open')
         modal.Wrapper.classList.remove('open')
     }
